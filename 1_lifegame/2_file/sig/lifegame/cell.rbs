@@ -1,0 +1,8 @@
+module Lifegame
+  class Cell
+    attr_accessor alive: bool
+
+    def initialize: (?alive: bool) -> void
+    def alive?: () -> bool
+  end
+end

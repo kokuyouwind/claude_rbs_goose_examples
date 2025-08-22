@@ -1,0 +1,17 @@
+module Lifegame
+  class Board
+    @width: Integer
+    @height: Integer
+    @cells: Array[Array[Cell]]
+
+    def initialize: (Integer width, Integer height) -> void
+    def randomize: () -> void
+    def display: () -> void
+    def update: () -> void
+    
+    private
+
+    def next_cell_state: (Integer x, Integer y) -> bool
+    def count_alive_neighbors: (Integer x, Integer y) -> Integer
+  end
+end

@@ -1,0 +1,18 @@
+D = Steep::Diagnostic
+
+target :lib do
+  signature "sig"
+  
+  check "lib"
+  
+  library "pathname"
+end
+
+target :test do
+  signature "sig", "sig/test"
+  check "spec"
+  
+  configure_code_diagnostics(D::Ruby.lenient)
+  
+  library "pathname"
+end
