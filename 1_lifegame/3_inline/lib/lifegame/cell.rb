@@ -1,13 +1,18 @@
 # frozen_string_literal: true
+# rbs_inline: enabled
 
 module Lifegame
   class Cell
+    # @rbs @alive: bool
     attr_accessor :alive
 
+    # @rbs alive: bool -- Whether the cell is initially alive
+    # @rbs return: void
     def initialize(alive: false)
       @alive = alive
     end
 
+    # @rbs return: bool
     def alive?
       @alive
     end
