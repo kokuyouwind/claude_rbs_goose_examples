@@ -1,22 +1,13 @@
 # frozen_string_literal: true
-# rbs_inline: enabled
 
 module Lifegame
   class Board
-    # @rbs @width: Integer
-    # @rbs @height: Integer 
-    # @rbs @cells: Array[Array[Cell]]
-
-    # @rbs width: Integer -- Width of the board
-    # @rbs height: Integer -- Height of the board
-    # @rbs return: void
     def initialize(width, height)
       @width = width
       @height = height
       @cells = Array.new(@height) { Array.new(@width) { Cell.new } }
     end
 
-    # @rbs return: void
     def randomize
       @cells.each do |row|
         row.each do |cell|
@@ -25,13 +16,11 @@ module Lifegame
       end
     end
 
-    # @rbs return: void
     def display
       system "clear"
       puts @cells.map { |row| row.map { |cell| cell.alive? ? "██" : "  " }.join }.join("\n")
     end
 
-    # @rbs return: void
     def update
       new_cells = Array.new(@height) { Array.new(@width) { Cell.new } }
       @height.times do |y|
@@ -42,9 +31,6 @@ module Lifegame
       @cells = new_cells
     end
 
-    # @rbs x: Integer -- X coordinate
-    # @rbs y: Integer -- Y coordinate
-    # @rbs return: bool
     def next_cell_state(x, y)
       alive_neighbors = count_alive_neighbors(x, y)
       if @cells[y][x].alive?
@@ -54,9 +40,6 @@ module Lifegame
       end
     end
 
-    # @rbs x: Integer -- X coordinate
-    # @rbs y: Integer -- Y coordinate
-    # @rbs return: Integer
     def count_alive_neighbors(x, y)
       count = 0
       (-1..1).each do |dy|

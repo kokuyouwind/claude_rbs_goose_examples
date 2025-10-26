@@ -9,9 +9,3 @@
 
 # rspec failure tracking
 .rspec_status
-
-# RBS and type checking
-.gem_rbs_collection/
-sig/generated/
-.claude/commands/rbs_goose
-.claude/commands/rbs_goose.md
