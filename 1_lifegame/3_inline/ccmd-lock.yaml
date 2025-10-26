@@ -1,0 +1,11 @@
+version: "1.0"
+lockfileVersion: 1
+commands:
+    rbs_goose:
+        name: rbs_goose
+        version: 1.0.0
+        source: https://github.com/kokuyouwind/claude_rbs_goose.git
+        resolved: https://github.com/kokuyouwind/claude_rbs_goose.git@main
+        commit: 0c2b70152fb5dbf26536cd061e1332075923f72b
+        installed_at: 2025-10-26T18:17:26.31702+09:00
+        updated_at: 2025-10-26T18:17:26.31702+09:00
