@@ -6,7 +6,7 @@ module Lifegame
     # @rbs @alive: bool
     attr_accessor :alive
 
-    # @rbs alive: bool -- Whether the cell is initially alive
+    # @rbs alive: bool
     # @rbs return: void
     def initialize(alive: false)
       @alive = alive

@@ -6,6 +6,6 @@ commands:
         version: 1.0.0
         source: https://github.com/kokuyouwind/claude_rbs_goose.git
         resolved: https://github.com/kokuyouwind/claude_rbs_goose.git@main
-        commit: 850d0151270593b3b7c1a64cda7f13a5aac6de9a
-        installed_at: 2025-08-25T14:27:52.821138+09:00
-        updated_at: 2025-08-25T14:27:52.821138+09:00
+        commit: 0c2b70152fb5dbf26536cd061e1332075923f72b
+        installed_at: 2025-10-26T18:17:26.31702+09:00
+        updated_at: 2025-10-26T18:17:26.31702+09:00

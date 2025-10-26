@@ -4,11 +4,11 @@
 module Lifegame
   class Board
     # @rbs @width: Integer
-    # @rbs @height: Integer 
+    # @rbs @height: Integer
     # @rbs @cells: Array[Array[Cell]]
 
-    # @rbs width: Integer -- Width of the board
-    # @rbs height: Integer -- Height of the board
+    # @rbs width: Integer
+    # @rbs height: Integer
     # @rbs return: void
     def initialize(width, height)
       @width = width
@@ -42,8 +42,8 @@ module Lifegame
       @cells = new_cells
     end
 
-    # @rbs x: Integer -- X coordinate
-    # @rbs y: Integer -- Y coordinate
+    # @rbs x: Integer
+    # @rbs y: Integer
     # @rbs return: bool
     def next_cell_state(x, y)
       alive_neighbors = count_alive_neighbors(x, y)
@@ -54,8 +54,8 @@ module Lifegame
       end
     end
 
-    # @rbs x: Integer -- X coordinate
-    # @rbs y: Integer -- Y coordinate
+    # @rbs x: Integer
+    # @rbs y: Integer
     # @rbs return: Integer
     def count_alive_neighbors(x, y)
       count = 0

@@ -2,6 +2,7 @@
 # rbs_inline: enabled
 
 module Lifegame
-  # @rbs VERSION: String
+  # @rbs!
+  #   VERSION: String
   VERSION = "0.1.0"
 end

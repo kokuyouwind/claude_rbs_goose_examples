@@ -10,7 +10,7 @@
 # rspec failure tracking
 .rspec_status
 
-# RBS and type checking
+# RBS
 .gem_rbs_collection/
 sig/generated/
 .claude/commands/rbs_goose

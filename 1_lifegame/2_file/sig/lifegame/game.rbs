@@ -5,6 +5,7 @@ module Lifegame
     @board: Board
 
     def initialize: (?width: Integer, ?height: Integer) -> void
+
     def run: () -> void
   end
 end

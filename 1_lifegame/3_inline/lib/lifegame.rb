@@ -8,4 +8,5 @@ require_relative "lifegame/cell"
 
 module Lifegame
   class Error < StandardError; end
+  # Your code goes here...
 end

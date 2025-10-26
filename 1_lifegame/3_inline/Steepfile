@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-target "lib" do |t|
-  t.signature "sig"
-  t.repo_path ".gem_rbs_collection"
+target :lib do
+  signature "sig"
 
-  t.check "lib"
+  check "lib"
+
+  library "pathname"
 end

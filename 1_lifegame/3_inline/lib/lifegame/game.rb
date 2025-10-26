@@ -7,8 +7,8 @@ module Lifegame
     # @rbs @height: Integer
     # @rbs @board: Board
 
-    # @rbs width: Integer -- Width of the game board
-    # @rbs height: Integer -- Height of the game board
+    # @rbs width: Integer
+    # @rbs height: Integer
     # @rbs return: void
     def initialize(width: 10, height: 10)
       @width = width
