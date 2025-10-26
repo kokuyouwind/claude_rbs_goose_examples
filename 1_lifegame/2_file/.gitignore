@@ -9,3 +9,8 @@
 
 # rspec failure tracking
 .rspec_status
+
+# rbs_goose
+.gem_rbs_collection/
+.claude/commands/rbs_goose.md
+.claude/commands/rbs_goose/
